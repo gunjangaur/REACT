@@ -1,0 +1,89 @@
+React
+npx create-react-app <app_name>
+Yarn was created by facebook when npm was having some issues
+
+babel and webpack for browser compatibility  -- take our src folder, babel is going to make sure it runs on very browser(similarly like jQuery) 
+webpack bundles up everything together and minify the code
+npm run build -- optimised code build
+
+class App extends Component{
+}
+
+classes vs function
+
+JSX attribute
+
+Component is a property on react.
+class component and functional component
+
+Lifecycle methods - called at different stages when the page is rendered.
+
+
+JS concept
+const arr = [1,2,3,4];
+array methods-
+map() --  arr.map()  -> It lets us create new arrays with new values or performing some kind of operation on each value of array
+filter()
+reduce()
+find()
+includes()
+
+Javascript Asynchronous Event Handling
+Promises
+fetch()
+
+
+state vs props
+
+
+Github
+create a new repository
+copy the ssh link
+git remote add origin <link> 
+yarn add gh-pages
+
+in package.json; add "homepage": "https://gunjangaur.github.io/monsters-rolodex",
+
+in scripts
+"predeploy":"yarn build",
+"deploy":"gh-pages -d build"
+
+
+git remote set-url origin https://gunjangaur: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@github.com/gunjangaur/monsters-rolodex.git
+
+create-react-app 
+
+
+unidirectional data flow
+
+
+state update are asynchronous
+
+this.setState({},()=>{})
+object and callback method are passed
+
+alternate class syntax
+
+react lifecycle methods
+constructor()
+componentDidMount()
+componentDidUpdate()
+componentWillUnmount()
+shouldComponentUpdate()
+render()
+
+When mounting
+constructor()-loads all the methods and functionality from the Component via super() call, state is initialized here so it can be available to all other methods
+render() -- display part, any props value gets evaluated here
+componentDidMount()
+
+
+Updating
+new props , setState(), forceUpdate()
+after the above changes, shouldComponentUpdate()
+render()
+componentDidUpdate()
+
+Unmounting 
+when the component is already mouted but due to some condition it has to be unmounted such as toggling
+before removing it will call componentWillUnmount
